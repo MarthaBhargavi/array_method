@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> array methods </h1>
+    <h3>array is the collection of elements <br> elements can be any datatype </h3>
+    <h2>1.Push method</h2>
+    <p>*push is used to insert the element into an array at the last index.</p>
+    <p>*multiple values can be pushed into an array</p>
+    <h2>2.Pop method</h2>
+    <p>* pop is used to remove the element in an array at the last index.</p>
+    <h2>3.unshift method</h2>
+    <p>* It insertes the element at the beginning of an array</p>
+    <h2>4.shit method</h2>
+    <p>* it removes the element at the beginning of the array</p>
+    <h2>5.splice</h2>
+    <p>* It is used to insert or delete an element from array</p>
+    <p>3 parameter are there in splice 
+    <pre>
+    arr.splice(a,b,c)   a=start index
+                      b=how many elements to be deleted
+                      c=values to be inserted 
+    </pre>
+    </p>
+    <h2>6.sort method</h2>
+    <p>it sorts the array in ascending order</p>
+    <P> it sorts the array in ascending by only first digit of array elements</P>
+    <h2>7.slice method </h2>
+    <p> It slice the array</p>
+    <h2>8.reverse method</h2>
+    <p>It is used to reverse the order of elements in an array</p>
+    <h2>9.Join method</h2>
+    <p>join is used to join the elements with some characters or symbols</p>
+    <h2>10. concat method</h2>
+    <p> concat method is used to add 2 arrays</p>
+
+
+
+    <script>
+    //     let arr=[1,"string",true,null,undefined,[],{}]
+    //     for (i=0;i<=arr.length-1;i++){
+    //     console.log(arr[i])
+    // }
+    // console.log(typeof(arr))
+    
+
+//*****push method*******//
+
+
+        // let arr=[1,"string",true,null,undefined,[],{}]
+        // arr.push("names",65,true)
+        // console.log(arr)
+
+    //    let fruits=["banana","apple","grapes"]
+    //     // let i=fruits.length
+    //   for( i=1;fruits.length<=3;i++){
+    //     fruits.push("kiwi","pineapple")
+    //   }
+    //     console.log(fruits)
+       
+
+    // let fruits=["banana","apple","grapes"]
+    //     i=fruits.length
+    //     if(i<=2){
+    //         fruits.push("orange","promagrante","dragon")
+    //     }
+    //     else{
+    //         fruits.push("kiwi","pineapple")
+    //     }
+    //     console.log(fruits)
+       
+//***pop method***//
+
+// let cities=["warangal","hyderabad","kammamam","22"]
+// cities.pop()
+// console.log(cities)
+
+// let color=["red","blue","green","orange"]
+// color.pop()
+// console.log(color)
+
+
+    // let fruits=["banana","apple","grapes"]
+    //     i=fruits.length
+    //     if(i<=2){
+    //         fruits.push("orange","promagrante","dragon")
+    //     }
+    //     else{
+    //         fruits.pop()
+    //     }
+    //     console.log(fruits)
+
+// let arr=["IAM", "using","unshift","method"]
+// arr.unshift("hi","10k")
+// console.log(arr)
+
+// let school=["school","hi","how_are_u"]
+// school.shift()
+// console.log(school)
+
+//****splice******//
+
+// let color=["blue","green","yellow","red",]
+
+// color.splice(0,0,"violet","indego")
+// console.log(color)
+// color.splice(5,0,"orange")
+
+//***sort method****//
+// let num=[1,2,3,4,9,8,7,6,5]
+// num.sort()
+// console.log(num)
+
+// let num_1=[1,12,23,24,9,78,66,85,0,5,100]
+// num_1.sort()
+// console.log(num_1)
+
+//***slice method***//
+// let num=[0,1,2,3,4,5,6,7,8,9]
+// console.log(num.slice(2,5))
+
+//*****reverse method****//
+
+// let letter=["R","O","Y","G","B","I","V"]
+// letter.reverse()
+// console.log(letter)
+
+// let num_1=[1,12,23,24,9,78,66,85,0,5,100]
+// num=num_1.sort()
+// console.log(num)
+// num_2=num.reverse()
+// console.log(num_2)
+
+//*****join********//
+// join method cannot modify original array we have to create other array//
+
+
+// let letter=["V","I","B","G","Y","O","R",]
+// let letter1=letter.join("and")
+// console.log(letter1)
+
+// let fruits=["apple","banana","grapes","papaya","are fruits"]
+// let fruit=fruits.join(" and ")
+// console.log(fruit)
+
+//***************concat****//
+// concat methpd cannot modify original array we have to create other array//
+
+// let veg=["brinjal","tomato","carrat","beetroot"]
+// let fru=["apple","banana","grapes"]
+// let veg_fru=veg.concat(fru)
+// console.log(veg_fru)
+
+////*****************array search method ****************************///
+
+///1.indexof///
+// let arr=[1,2,3,5]
+// console.log(arr.indexOf(5))
+
+// let veg=["tomato","potato","brinjal"]
+// console.log(veg.indexOf(6))
+
+// let veg=["tomato","potato","brinjal"]
+// console.log(veg.indexOf("apple"))
+
+///2.lastIndexOf///
+// returns the last occurance of specified element of an array//
+
+// let numb=[1,55,88,7,6,2,5,99,4,2,3,88,2,66]
+// console.log(numb.lastIndexOf(88))
+
+
+// let num=[1,55,88,7,6,2,5,99,4,2,3,88,2,66]
+// console.log(num.lastIndexOf(2))
+
+
+// let numb=[1,55,88,7,6,2,5,99,4,2,3,88,2,66]
+// console.log(numb.lastIndexOf(8))
+
+///includes///
+//it returns true if the array includes the specified element//
+
+// let veg=["tomato","potato","brinjal"]
+// console.log(veg.includes("chicken"))
+
+// let num=[1,22,33,45,68,79]
+// console.log(num.includes(44))
+// console.log(num.includes(33))
+
+
+let eve=[1,2,3,4,5,6,7,8,9,55,44,66]
+for(i=0;i<=eve.length-1;i++){
+    // console.log(i)
+    if(eve[i]%2==0)
+    console.log(eve[i])
+}
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
